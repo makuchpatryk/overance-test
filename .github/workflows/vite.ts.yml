@@ -21,7 +21,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -49,3 +48,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  chrome:
+    runs-on: ubuntu-22.04
+    name: E2E on Chrome
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cypress-io/github-action@v6
