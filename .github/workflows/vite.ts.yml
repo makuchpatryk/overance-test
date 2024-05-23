@@ -49,6 +49,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
   chrome:
+    needs: deploy
     runs-on: ubuntu-22.04
     name: E2E on Chrome
     steps:
