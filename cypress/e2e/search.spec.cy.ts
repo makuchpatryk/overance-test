@@ -1,6 +1,6 @@
 describe("checking searching elements", () => {
   beforeEach(() => {
-    cy.visit("/");
+    cy.visit("http://localhost:5173/overance-test/");
   });
 
   it("checking if all elements match to search value", () => {
