@@ -1,11 +1,17 @@
-name: Add Action
-on:
-  push:
-    branches:
-      - main
+name: Cypress Tests
+
+on: [push]
+
 jobs:
-  Cypress-Test:
+  cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout GitCode
+      - name: Checkout
         uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm run dev
