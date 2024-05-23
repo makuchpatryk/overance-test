@@ -10,8 +10,7 @@ export default defineConfig({
   },
 
   e2e: {
-    baseUrl: process.env.BASE_URL,
-    defaultCommandTimeout: 10000,
+    baseUrl: "http://localhost:5173/overance-test/",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
