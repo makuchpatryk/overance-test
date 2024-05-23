@@ -49,9 +49,11 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
   chrome:
-    needs: deploy
+    # needs: deploy
     runs-on: ubuntu-22.04
     name: E2E on Chrome
     steps:
       - uses: actions/checkout@v4
       - uses: cypress-io/github-action@v6
+    env:
+      GITHUB_TOKEN: ${{secrets.BASE_URL}}
