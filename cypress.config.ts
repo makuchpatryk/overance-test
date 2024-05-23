@@ -10,7 +10,7 @@ export default defineConfig({
   },
 
   e2e: {
-    baseUrl: "http://localhost:5173",
+    baseUrl: process.env.BASE_URL,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
