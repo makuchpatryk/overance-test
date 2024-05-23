@@ -14,5 +14,5 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           env:
-            BASE_URL: https://makuchpatryk.github.io/overance-test/
+            CYPRESS_BASE_URL: https://makuchpatryk.github.io/overance-test/
           build: npm run build
