@@ -2,7 +2,7 @@ name: Chrome
 on: push
 jobs:
   chrome:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20
     name: E2E on Chrome
     steps:
       - uses: actions/checkout@v4
