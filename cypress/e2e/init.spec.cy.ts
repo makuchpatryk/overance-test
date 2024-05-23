@@ -1,6 +1,6 @@
 describe("checking if page and components is open spec", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:5173/overance-test/");
+    cy.visit("https://makuchpatryk.github.io/overance-test/");
   });
 
   it("check element render", () => {

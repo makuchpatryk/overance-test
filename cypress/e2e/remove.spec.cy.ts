@@ -1,6 +1,6 @@
 describe("checking if remove button is working", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:5173/overance-test/");
+    cy.visit("https://makuchpatryk.github.io/overance-test/");
   });
 
   it("checking removing input", () => {
