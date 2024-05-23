@@ -10,8 +10,6 @@ export default defineConfig({
   },
 
   e2e: {
-    baseUrl: process.env.BASE_URL,
-    // defaultCommandTimeout: 20000,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
