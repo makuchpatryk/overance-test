@@ -40,11 +40,9 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: E2E test
+        run: npm run e2e:chrome
       - name: Setup Pages
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          start: npm run dev
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
