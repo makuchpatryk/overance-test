@@ -1,6 +1,6 @@
 describe("checking if add new input works well", () => {
   beforeEach(() => {
-    cy.visit("https://makuchpatryk.github.io/overance-test/");
+    cy.visit("/");
   });
 
   it("checking adding one input", () => {
