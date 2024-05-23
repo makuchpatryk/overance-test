@@ -15,4 +15,3 @@ jobs:
         with:
           config: "baseUrl=https://makuchpatryk.github.io/overance-test/"
           build: npm run build
-          start: npm run dev
