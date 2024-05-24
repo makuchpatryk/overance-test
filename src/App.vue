@@ -3,6 +3,7 @@ import { toRefs } from "vue";
 import Item from "./components/Item.vue";
 import SearchBar from "./components/SearchBar.vue";
 import AddButton from "./components/AddButton.vue";
+
 import { useAppStore } from "./store/app";
 
 const { state } = useAppStore();

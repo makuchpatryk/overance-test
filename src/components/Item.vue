@@ -11,6 +11,7 @@ type TProps = {
   item: TItem;
   isHighlight: boolean;
 };
+
 const props = defineProps<TProps>();
 
 const { onRemove } = useAppStore();
